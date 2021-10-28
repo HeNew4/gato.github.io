@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GATO</title>
+		<link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/38/PNG/512/catfootprint_4993.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Css-->
+		<style>
+			body{
+				font-family: 'Comfortaa', Arial;
+				background-color: lightgrey;
+				font-size: 35px;
+			}
+			h1, h2{
+				font-size: 35px;
+			}
+			p{
+				font-size: 25px;
+			}
+			button{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 90%;
+				height: 50px;
+			}
+			img{
+				border-radius: 15px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 25%;
+			}
+			.Contenedor{
+				margin: 0 auto;
+				width: 95%;
+				background-color: floralwhite;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+			.titulo{
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="Contenedor">
+			<div class="titulo"><header><h1 id="titulo_1">Gato triste</h1></header></div>
+			
+			<h2 id="titulo_2">Pobre gato :(</h2>
+
+			<p id="texto_1">El gato no tenia wiskas</p>
+			<p id="texto_2">Hasta a mi me dolio caso triste ;(</p>
+			<hr>
+			<div id="imagen">
+				<img src="https://th.bing.com/th/id/R.c728cf2ebbbe2444164b3e0535bd1000?rik=yA1m0T4IWO2IKw&pid=ImgRaw&r=0" alt="">
+			</div>
+			<br>
+			<button id="boton" onclick="acaricia()">Acaricia</button>
+			<p></p>
+			<!--Java Scritp-->
+			<script>
+				function acaricia() {
+					alert("Muy bien, pusiste al gato Feliz");
+					let texto_uno = innerHTML="<p>El gato ya no esta triste :D</p>";
+					let texto_dos = innerHTML="<p>Wow al gato le compraron wiskas :D!!!!</p>";
+					let titulo_1 = innerHTML="<h1>Gato feliz</h1>";
+					let titulo_2 = innerHTML="<h2>El gato con suerte</h2>";
+					let gato = innerHTML="<img src='https://th.bing.com/th/id/R.6a24df4415055a46adfb374251b2daf9?rik=JAl09nySjf7NBw&riu=http%3a%2f%2fwww.wallpapers4u.org%2fwp-content%2fuploads%2fcat_face_happy_56740_1920x1080.jpg&ehk=FbPzANQ%2f8kNBdgIu4xokY8x0Gj68RAeTiAmWjYJnN78%3d&risl=&pid=ImgRaw&r=0'>";
+					document.getElementById("imagen").innerHTML= gato;
+					document.getElementById("texto_1").innerHTML= texto_uno;
+					document.getElementById("texto_2").innerHTML= texto_dos;
+					document.getElementById("titulo_2").innerHTML= titulo_2;
+					document.getElementById("titulo_1").innerHTML= titulo_1;
+				}
+			</script>
+
+		</div>
+		
+	</body>
+</html>
